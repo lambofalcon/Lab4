@@ -6,20 +6,32 @@
 		<form action="http://www.example.com/review.php" method="get">
 			<fieldset>
 				<legend>Your Details:</legend>
+				<form>  First name:<br>  <input type="text" name="firstname"><br>  Last name:<br> <input type="text" name="lastname"></form>
 
 			</fieldset><br />
 			<fieldset>
 				<legend>Your Review:</legend>
 				<p>
 					<label for="hear-about">How did you hear about us?</label>
-
+						<select name="hear-about" id="hear-about">
+						  <option value="google">google</option>
+						  <option value="safari">Safari</option>
+						  <option value="edge">edge</option>
+						  <option value="firefox">firefox</option>
+						</select>
 				</p>
 				<p>
 					Would you visit again?<br />
+					<input type="radio" id="html" name="would you visit us again" value="HTML">
+	<label for="yes">yes</label><br>
+	<input type="radio" id="no" name="no" value="no">
+	<label for="no">no</label><br>
+	<input type="radio" id="maybe" name="maybe" value="maybe">
+	<label for="maybe">maybe</label>
 
 				</p>
 				<p>
-				
+
 				</p>
 				<label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
 				<input type="submit" value="Submit review" />
